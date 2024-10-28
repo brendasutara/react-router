@@ -7,7 +7,7 @@ function BlogPage() {
     <>
       <Outlet />
 
-      <h1>BlogPage</h1>
+      <h1>Blog</h1>
 
       <ul>
         {blogdata.map((post) => (

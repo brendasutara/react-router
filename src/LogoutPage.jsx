@@ -17,7 +17,7 @@ function LogoutPage() {
           paddingBottom: "20px",
         }}
       >
-        <button type="submit">Ingresar</button>
+        <button type="submit">Salir</button>
       </form>
     </>
   );

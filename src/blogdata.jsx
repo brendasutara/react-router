@@ -20,5 +20,12 @@ blogdata.push({
   content: "Angular es el mejor framework de JavaScript.",
   author: "nicobytes",
 });
+blogdata.push({
+  id: 4,
+  title: "¿Cuál es la ruta del programador frontend?",
+  slug: "ruta-frontend",
+  content: "Deberías estudiar las bases de la programación, react, etc.",
+  author: "brendasutara",
+});
 
 export { blogdata };

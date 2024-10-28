@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { useAuth } from "./auth";
+import { Navigate } from "react-router-dom";
 
 function LoginPage() {
   const auth = useAuth();
   const [username, setusername] = useState("");
-  const [contraseña, setContraseña] = useState("");
 
   const login = (e) => {
     e.preventDefault();
-    auth.login({ username, contraseña });
+    auth.login({ username });
   };
+
+  if (auth.user) {
+    return <Navigate to="/profile" />;
+  }
 
   return (
     <>
@@ -31,14 +35,6 @@ function LoginPage() {
           placeholder="Escribe tu username"
           value={username}
           onChange={(e) => setusername(e.target.value)}
-        />
-
-        <label>Escribe tu contraseña</label>
-        <input
-          type="text"
-          placeholder="Escribe tu contraseña"
-          value={contraseña}
-          onChange={(e) => setContraseña(e.target.value)}
         />
 
         <button type="submit">Ingresar</button>

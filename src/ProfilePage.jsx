@@ -7,10 +7,6 @@ function ProfilePage() {
     <>
       <h1>Perfil</h1>
       <h2>Parece que no registraste tus datos {auth.user.username}</h2>
-      <p>
-        La próxima una contraseña más díficil, &apos;{auth.user.contraseña}
-        &apos; nos la sabemos todos
-      </p>
       <img
         style={{
           height: "400px",

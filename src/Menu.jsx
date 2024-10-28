@@ -13,7 +13,7 @@ routes.push({
   id: 2,
   to: "/blog",
   text: "Blog",
-  private: false,
+  private: true,
 });
 routes.push({
   id: 3,
@@ -22,14 +22,14 @@ routes.push({
   private: true,
 });
 routes.push({
-  id: 3,
+  id: 4,
   to: "/login",
   text: "Login",
   private: false,
   publicOnly: true,
 });
 routes.push({
-  id: 3,
+  id: 5,
   to: "/logout",
   text: "Logout",
   private: true,
