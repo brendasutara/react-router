@@ -5,8 +5,8 @@ function ProfilePage() {
 
   return (
     <>
-      <h1>Perfil</h1>
-      <h2>Parece que no registraste tus datos {auth.user.username}</h2>
+      <h1>Perfil {auth.user.username}</h1>
+      <h2>Bienvenido, ahora puedes leer tu blog</h2>
       <img
         style={{
           height: "400px",
@@ -18,9 +18,6 @@ function ProfilePage() {
         src="https://i.pinimg.com/736x/e6/90/44/e690445fd2555e8fd45d222f16f3042f.jpg"
         alt="esperando"
       />
-      <div>
-        <button>Volver a registrarme</button>
-      </div>
     </>
   );
 }

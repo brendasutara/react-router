@@ -1,6 +1,8 @@
-import { createContext, useContext, useState } from "react";
 import PropTypes from "prop-types";
+import { createContext, useContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+
+const adminList = ["Irisval", "RetaxMaster", "freddier"];
 
 const AuthContext = createContext();
 
@@ -9,7 +11,8 @@ function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
 
   const login = ({ username }) => {
-    setUser({ username });
+    const isAdmin = adminList.find((admin) => admin === username);
+    setUser({ username, isAdmin });
     navigate("/profile");
   };
 
